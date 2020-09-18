@@ -1,0 +1,600 @@
+<html>
+   <head>
+	   <!--TO Support Many Language Include Arabic Language-->
+        <meta charset="utf-8"/>
+	   
+	   <!--For Internet Explorer-->
+	    <meta http-equiv="X-UA-	Compatible"content="IE=edge">
+	   
+	   <!--First mobilw meta-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	   
+        <meta name="description"content="mt company">
+        <title> Stacknet | Medical Insurance Conpany</title>
+        <link   
+             rel = "icon" 
+            href ="img/logo.png" 
+            type = "image/x-icon">
+        <!--call bootstrap-->
+	    <link rel="stylesheet"href="css/bootstrap.css"/>
+        <!--Page Style-->	   
+        <link rel="stylesheet"href="css/style.css"/>
+       <!--Animate.css-->
+       <link rel="stylesheet"href="css/animate.min.css"/>
+       <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>        
+       <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">       
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+       <link href="https://fonts.googleapis.com/css?family=Pacifico"rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet"><!---AOS LAIBIRARY-->
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	   <!--Internet Explorer-->
+	    <script src="js/html5shiv.min.js"></script>
+	   	<script src="js/respond.min.js"></script>
+	   <!---->
+	</head>
+	<body>
+
+        <!---------- Admin Dasboard -------->
+
+        <!--- New Contract Btn-->
+        <button data-toggle="modal"
+                data-target="#new-contract" 
+                title="New Contract" 
+                data-html="true" 
+                data-placement="top" 
+                class="btn btn-danger btn-sm rounded-circle position-fixed" 
+                style="bottom: 100px;right: 50px;z-index: 9999; width: 50px; height: 50px;"> +
+        </button>
+
+        <!------------- NavBar ------------->
+
+        <nav class="navbar navbar-expand-md navbar-light">
+            <button class="navbar-toggler ml-auto mb-2 bg-light" type="button" data-toggle="collapse" data-target="#myNavBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavBar">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <!-- Sidebar-->
+                        <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+                            <a href="#" class="navbar-brand border-nav2 text-white d-block mx-auto text-center py-3 mb-4">
+                                Stacknet
+                            </a>
+                            <div class=" pb-3 text-center">
+                                <img src="img/5.jpg" alt="UserPic" width="50" height="50" class="rounded-circle mr-3 img-profile" >
+                                <a href="index.html" class="text-white">Elrehab Hospital</a>
+                            </div>
+                            <ul class="navbar-nav flex-column mt-4">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link text-white p-3  current">
+                                         <i class="fas fa-home"></i>
+                                         Home Page 
+                                    </a> 
+                                </li>
+                                <li class="nav-item">
+                                    <a href="my-profile.html" class="nav-link text-white p-3  sidebar-link">
+                                         <i class="fas fa-user"></i>
+                                         Profile 
+                                    </a> 
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-white p-3  sidebar-link">
+                                         <i class="fas fa-envelope"></i>
+                                         Inbox 
+                                    </a> 
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Of Sidebar-->
+
+                        <!--    Top Nav    -->
+                        <div class="col-xl-10 col-lg-9 col-md-8 ml-auto bg-white fixed-top py-2 top-navbar border-nav">
+                            <div class="row align-items-center">
+                                <!-- <div class="col-md-4">
+                                    <h4 class="text-white text-uppercase mb-0 ">Dashboard</h4>
+                                </div> -->
+                                <!-- <div class="col-md-5 d-flex justify-content-center">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control search-input" placeholder="Search...">
+                                        <button type="button" class="btn btn-white search-button">
+                                            <i class="fas fa-search text-danger"></i>
+                                        </button>
+                                    </div>
+                                </div> -->
+                                <div class="col-md-12 d-flex justify-content-end">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item dropdown dropdown-move position-relative">
+                                            <a class="nav-link dropdown-toggle icon-bullet" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-bell text-dark fa-lg"></i>
+                                          </a>
+                                            <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
+                                            <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+                                              <a class="dropdown-item" href="#">Action</a>
+                                              <a class="dropdown-item" href="#">Another action</a>
+                                              <div class="dropdown-divider"></div>
+                                              <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown dropdown-move position-relative ">
+                                            <a class="nav-link dropdown-toggle icon-bullet2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-comments text-dark fa-lg"></i>
+                                          </a>
+                                            <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
+                                            <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+                                              <a class="dropdown-item" href="#">Action</a>
+                                              <a class="dropdown-item" href="#">Another action</a>
+                                              <div class="dropdown-divider"></div>
+                                              <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src="img/5.jpg" alt="">
+                                          </a>
+                                            <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
+                                            <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+                                              <a class="dropdown-item" href="my-profile.html">Profile</a>
+                                              <a class="dropdown-item" href="#">LogOut</a>
+                                            </div>
+                                        </li>
+
+
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End Of Top Nav-->
+
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+        
+
+
+        <!-- Cards -->
+        <!-- <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                        <div class="row pt-md-5 mt-md-3 mb-5">
+                            <div class="col-xl-3 col-sm-6 p-2">
+                                <div class="card card-common">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <i class="fas fa-shopping-cart fa-3x text-warning"></i>
+                                            <div class="text-right text-secondary">
+                                                <h5>Sales</h5>
+                                                <h3>$153.000</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer text-secondary">
+                                        <i class="fas fa-sync mr-3"></i>
+                                        <span>Updated</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-sm-6 p-2">
+                                <div class="card card-common">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <i class="fas fa-money-bill-alt fa-3x text-success"></i>
+                                            <div class="text-right text-secondary">
+                                                <h5>Expenses</h5>
+                                                <h3>$39.000</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer text-secondary">
+                                        <i class="fas fa-sync mr-3"></i>
+                                        <span>Updated</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-sm-6 p-2">
+                                <div class="card card-common">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <i class="fas fa-users fa-3x text-info"></i>
+                                            <div class="text-right text-secondary">
+                                                <h5>Users</h5>
+                                                <h3>15</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer text-secondary">
+                                        <i class="fas fa-sync mr-3"></i>
+                                        <span>Updated</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-sm-6 p-2">
+                                <div class="card card-common">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <i class="fas fa-chart-line fa-3x text-danger"></i>
+                                            <div class="text-right text-secondary">
+                                                <h5>Visitors</h5>
+                                                <h3>45.000</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer text-secondary">
+                                        <i class="fas fa-sync mr-3"></i>
+                                        <span>Updated</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         -->
+
+        <!----- Table Section ----->
+        <div class="container-fluid mt-5 pt-5">
+            <div class="row mb-5">
+                <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                    <div class="row align-items-center">
+                        <div class="col-xl-8 col-12 mb-4 mb-xl-0">
+                            <div style="height:400px;overflow: auto;" class="mb-3 mt-4">
+                                <table class="table table-striped bg-light text-center">
+                                    <thead>
+                                        <tr class="text-muted">
+                                            <th>#</th>
+                                            <th>Company</th>
+                                            <th>Contract Date</th>
+                                            <th>Responsible Person</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Axa</td>
+                                            <td>15-2-2020</td>
+                                            <td>Ahmed Mohamed</td>
+                                            <td><span class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="bottom" title="You Deactivate this because it not doing his right job" style="cursor:help;">Un Active</span></td>
+                                            <td style="display: none;"><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#unActive" >Deactivate Company</button></td>
+                                            <td><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#Active">activate Company</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Alico</td>
+                                            <td>15-2-2020</td>
+                                            <td>Mohamed Ahmed</td>
+                                            <td><span class="btn btn-success btn-sm" style="cursor: none;">Active</span></td>
+                                            <td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#unActive">Deactivate Company</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Egycare</td>
+                                            <td>15-2-2020</td>
+                                            <td>Ahmed Mohamed</td>
+                                            <td>
+                                                <span class="btn btn-danger btn-sm" data-toggle="tooltip" title="You Deactivate this because it not doing his right job" style="cursor:help;">Un Active</span>
+                                            </td>
+                                            <td style="display: none;"><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#unActive" >Deactivate Company</button></td>
+                                            <td><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#Active">activate Company</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Globmid</td>
+                                            <td>15-2-2020</td>
+                                            <td>Ahmed Mohamed</td>
+                                            <td><span class="btn btn-success btn-sm" style="cursor: none;">Active</span></td>
+                                            <td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#unActive">Deactivate Company</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Axa</td>
+                                            <td>15-2-2020</td>
+                                            <td>Ahmed Mohamed</td>
+                                            <td><span class="btn btn-success btn-sm" style="cursor: none;">Active</span></td>
+                                            <td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#unActive">Deactivate Company</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Axa</td>
+                                            <td>15-2-2020</td>
+                                            <td>Ahmed Mohamed</td>
+                                            <td><span class="btn btn-success btn-sm" style="cursor: none;">Active</span></td>
+                                            <td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#unActive">Deactivate Company</button></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                            <!---- Pagination ---->
+                            <nav>
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a href="#" class="page-link py-2 px-3">
+                                            <span>&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a href="#" class="page-link py-2 px-3">
+                                            <span>1</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link py-2 px-3">
+                                            <span>2</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link py-2 px-3">
+                                            <span>3</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link py-2 px-3">
+                                            <span>&raquo;</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </nav>
+                            <!----- End Pagination ----->
+                        </div>
+
+                        <div class="col-xl-4 col-12" style="overflow: scroll;">
+
+                            <div class="card p-2 mb-3" style="height: 400px;overflow: auto;">
+                                <form action="" class="form-group" class="w-100 mb-5">
+                                    <input type="search" name="company-search" id="company-search" class="form-control" placeholder="search for company">
+                                </form>
+
+                                <a href="profile-company.html">
+                                    <div class="card-content pb-3 pt-3">
+                                        <div class="d-flex" style="flex-wrap: wrap;">
+                                            <div style="width:20%" class="mr-2">
+                                                <img src="img/doc1.jpg" alt="" class="rounded-circle" style="width: 50px;">
+                                            </div>
+                                            <div style="width:70%">
+                                                <p>
+                                                    Axa <br>
+                                                    <span class="text-success">Insurane Company</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="profile-company.html">
+                                    <div class="card-content pb-3 pt-3">
+                                        <div class="d-flex" style="flex-wrap: wrap;">
+                                            <div style="width:20%" class="mr-2">
+                                                <img src="img/doc1.jpg" alt="" class="rounded-circle" style="width: 50px;">
+                                            </div>
+                                            <div style="width:70%">
+                                                <p>
+                                                    Globmid <br>
+                                                    <span class="text-success">Insurane Company</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="profile-company.html">
+                                    <div class="card-content pb-3 pt-3">
+                                        <div class="d-flex" style="flex-wrap: wrap;">
+                                            <div style="width:20%" class="mr-2">
+                                                <img src="img/doc1.jpg" alt="" class="rounded-circle" style="width: 50px;">
+                                            </div>
+                                            <div style="width:70%">
+                                                <p>
+                                                    Alico <br>
+                                                    <span class="text-success">Insurane Company</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="profile-company.html">
+                                    <div class="card-content pb-3 pt-3">
+                                        <div class="d-flex" style="flex-wrap: wrap;">
+                                            <div style="width:20%" class="mr-2">
+                                                <img src="img/doc1.jpg" alt="" class="rounded-circle" style="width: 50px;">
+                                            </div>
+                                            <div style="width:70%">
+                                                <p>
+                                                    EgyCare <br>
+                                                    <span class="text-success">Insurane Company</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="profile-company.html">
+                                    <div class="card-content pb-3 pt-3">
+                                        <div class="d-flex" style="flex-wrap: wrap;">
+                                            <div style="width:20%" class="mr-2">
+                                                <img src="img/doc1.jpg" alt="" class="rounded-circle" style="width: 50px;">
+                                            </div>
+                                            <div style="width:70%">
+                                                <p>
+                                                    Axa <br>
+                                                    <span class="text-success">Insurane Company</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="profile-company.html">
+                                    <div class="card-content pb-3 pt-3">
+                                        <div class="d-flex" style="flex-wrap: wrap;">
+                                            <div style="width:20%" class="mr-2">
+                                                <img src="img/doc1.jpg" alt="" class="rounded-circle" style="width: 50px;">
+                                            </div>
+                                            <div style="width:70%">
+                                                <p>
+                                                    Axa <br>
+                                                    <span class="text-success">Insurane Company</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--- End Tables --->
+
+
+
+        <!----------- Footer ------------>
+
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                        <div class="row border-top pt-3">
+                            <div class="col-lg-12 text-center">
+                                <p>&copy; 2020 copyright. made with <i class="fas fa-heart text-danger"></i> by <span class="text-success">Stacknet Team</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!--- Modals --->
+        <!---------- Logout Modal --------->
+        <div class="modal fade" id="sign-out">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">Want To Leave ?</div>
+                        <button type="button" class="close" data-dismiss="modal">&times</button>
+                    </div>
+                    <div class="modal-body">
+                        Press logout to leave 
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-info btn-sm" data-dismiss="modal">Stay here</button>
+                        <button class="btn btn-danger btn-sm" data-dismiss="modal">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------- End Of Modal----->
+        <!------- Unactive Company Modal --------->
+        <div class="modal fade" id="unActive">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">Are You Sure ?</div>
+                        <button type="button" class="close" data-dismiss="modal">&times</button>
+                    </div>
+                    <div class="modal-body">
+                        Write The Reason Of this 
+                        <form action="" class="form-group mt-3">
+                            <textarea name="unactive" id="unactive" class="form-control" placeholder="description" style="height: 100px;"></textarea>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-info btn-sm" data-dismiss="modal">Still Active</button>
+                        <button class="btn btn-danger btn-sm" data-dismiss="modal">Un Active</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------- End Of Modal-->
+
+        <!------- Unactive Company Modal --------->
+        <div class="modal fade" id="Active">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">Are You Sure ?</div>
+                        <button type="button" class="close" data-dismiss="modal">&times</button>
+                    </div>
+                    <div class="modal-body">
+                        Reason Is Sloved ??
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-info btn-sm" data-dismiss="modal">Still DeActive</button>
+                        <button class="btn btn-danger btn-sm" data-dismiss="modal">Active</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------- End Of Modal-->
+        <!------- New Contract Modal --------->
+        <div class="modal fade" id="new-contract">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">Make New Contract </div>
+                        <button type="button" class="close" data-dismiss="modal">&times</button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="form-group mt-3">
+                            <select name="new-company" id="new-company" class="form-control">
+                                <option value="Axa">Axa</option>
+                                <option value="Globmid">Globmid</option>
+                                <option value="Alico">Alico</option>
+                                <option value="Egycare">Egycare</option>
+                                <option value="Axa">Axa</option>
+                            </select>
+                            <div class="text-center mt-3">
+                                <input type="submit" value="Make Contract" class="btn btn-info">
+                            </div>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------- End Of Modal-->
+
+        
+        <script src="js/particles.js"></script>
+        <script src="js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+        <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+		<script src="../js/wow.min.js"></script>
+        <script>
+          new WOW().init();
+        </script>
+        <script src="js/jQuery3.3.1.min.js"></script>
+        <!---Slider Laibiray-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/sliderComponents.js"></script>
+        <script src="js/e.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();   
+            });
+        </script>
+	</body>
+    
+
+
+</html>

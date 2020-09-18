@@ -1,0 +1,423 @@
+<html>
+   <head>
+	   <!--TO Support Many Language Include Arabic Language-->
+        <meta charset="utf-8"/>
+	   
+	   <!--For Internet Explorer-->
+	    <meta http-equiv="X-UA-	Compatible"content="IE=edge">
+	   
+	   <!--First mobilw meta-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	   
+        <meta name="description"content="mt company">
+        <title> Stacknet | Medical Insurance Conpany</title>
+        <link   
+             rel = "icon" 
+            href ="img/logo.png" 
+            type = "image/x-icon">
+        <!--call bootstrap-->
+	    <link rel="stylesheet"href="css/bootstrap.css"/>
+        <!--Page Style-->	   
+        <link rel="stylesheet"href="css/style.css"/>
+       <!--Animate.css-->
+       <link rel="stylesheet"href="css/animate.min.css"/>
+       <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>        
+       <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">       
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+       <link href="https://fonts.googleapis.com/css?family=Pacifico"rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet"><!---AOS LAIBIRARY-->
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	   <!--Internet Explorer-->
+	    <script src="js/html5shiv.min.js"></script>
+	   	<script src="js/respond.min.js"></script>
+	   <!---->
+	</head>
+	<body>
+
+        <!---------- Admin Dasboard -------->
+
+        <!------------- NavBar ------------->
+
+        <nav class="navbar navbar-expand-md navbar-light">
+            <button class="navbar-toggler ml-auto mb-2 bg-light" type="button" data-toggle="collapse" data-target="#myNavBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavBar">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <!-- Sidebar-->
+                        <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+                            <a href="#" class="navbar-brand border-nav2 text-white d-block mx-auto text-center py-3 mb-4">
+                                Stacknet
+                            </a>
+                            <div class=" pb-3 text-center">
+                                <img src="img/5.jpg" alt="UserPic" width="50" height="50" class="rounded-circle mr-3 img-profile" >
+                                <a href="index.html" class="text-white">AXA</a>
+                            </div>
+                            <ul class="navbar-nav flex-column mt-4">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link text-white p-3  current">
+                                         <i class="fas fa-home"></i>
+                                         Home Page  
+                                    </a> 
+                                </li>
+                                <li class="nav-item">
+                                    <a href="my-profile.html" class="nav-link text-white p-3  sidebar-link">
+                                         <i class="fas fa-user"></i>
+                                         Profile 
+                                    </a> 
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-white p-3  sidebar-link">
+                                         <i class="fas fa-envelope"></i>
+                                         Inbox 
+                                    </a> 
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Of Sidebar-->
+
+                        <!--    Top Nav    -->
+                        <div class="col-xl-10 col-lg-9 col-md-8 ml-auto bg-white fixed-top py-2 top-navbar border-nav">
+                            <div class="row align-items-center">
+                                <!-- <div class="col-md-4">
+                                    <h4 class="text-white text-uppercase mb-0 ">Dashboard</h4>
+                                </div> -->
+                                <!-- <div class="col-md-5 d-flex justify-content-center">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control search-input" placeholder="Search...">
+                                        <button type="button" class="btn btn-white search-button">
+                                            <i class="fas fa-search text-danger"></i>
+                                        </button>
+                                    </div>
+                                </div> -->
+                                <div class="col-md-12 d-flex justify-content-end">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item dropdown dropdown-move position-relative">
+                                            <a class="nav-link dropdown-toggle icon-bullet" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-bell text-dark fa-lg"></i>
+                                          </a>
+                                            <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
+                                            <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+                                              <a class="dropdown-item" href="#">Action</a>
+                                              <a class="dropdown-item" href="#">Another action</a>
+                                              <div class="dropdown-divider"></div>
+                                              <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown dropdown-move position-relative ">
+                                            <a class="nav-link dropdown-toggle icon-bullet2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-comments text-dark fa-lg"></i>
+                                          </a>
+                                            <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
+                                            <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+                                              <a class="dropdown-item" href="#">Action</a>
+                                              <a class="dropdown-item" href="#">Another action</a>
+                                              <div class="dropdown-divider"></div>
+                                              <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src="img/5.jpg" alt="">
+                                          </a>
+                                            <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
+                                            <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="my-profile.html">Profile</a>
+                                                <a class="dropdown-item" href="#">LogOut</a>
+                                            </div>
+                                        </li>
+
+
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End Of Top Nav-->
+
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+        
+
+        <!--- Company Ptofile 1- Data Header ---->
+        <div class="container-fluid mt-5 pt-5">
+            <div class="row">
+                <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                    <div class="card pb-5">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="row pl-4 pt-3">
+                                    <div class="col-xm-6">
+                                        <div class="mr-4">
+                                            <img src="img/doc1.jpg" alt="" class="rounded-circle" style="width: 50px;">
+                                        </div>
+                                    </div>
+                                    <div class="col-xm-6">
+                                        <a href="#">
+                                            Morgan <br>
+                                            <span class="text-success">Hospital</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-10  text-center company-btn pt-3 d-flex justify-content-sm-center justify-content-md-end" style="flex-wrap: wrap;">
+                                <a href="claims.html" class="mr-2">Show Claims</a>
+                                <a href="#" class="mr-2">Message</a>
+                                <a href="specific-company-Requests.html" class="mr-2">All InComming Requests <span class="badge bg-white ml-3 mt-0 text-danger" style="font-size: 10px;"> <span>2</span> New </span></a>
+                                <a href="requests-from-you.html" class="mr-2">Your Requests</a>
+                                <a href="make-medical-requests.html"  class="mr-2">Make Request</a>
+                                <a href="provider-profile.html" class="mr-2">Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--- Company Profile Content --->
+        <div class="container-fluid mt-2">
+            <div class="row">
+                <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                    <div class="card">
+                        <div class="card-data">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <a href="requests-from-you.html">
+                                        All Request From You: <span>3</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hospital-data mt-4 pl-2 ">
+                            <div class="mb-4">
+                                <i class="fas fa-user mr-3"></i> Request Info From You
+                            </div>
+                            <div class="task-border">
+                                <table class="table border-0 ">
+                                    <thead>
+                                      <tr>
+                                        <th>Type</th>
+                                        <td>Case Investigation</td>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th>Patient Name</th>
+                                        <td>Mohamed Ahmed Mahmoud</td>
+                                      </tr>
+                                      <tr>
+                                        <td>ID Number</td>
+                                        <td>230124521289</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Mobile Number</td>
+                                        <td>01126257042</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Description</td>
+                                        <td>We Want Full Medical Report, Date Of Admission of the patient, Date Of Exist, and the estimated cost </td>
+                                      </tr>
+                                      <tr>
+                                        <td>Status</td>
+                                        <td>Morgan Hospital Replied To You <span class="badge badge-success ml-3">Success</span> </td>
+                                      </tr>
+
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+
+                        <!--- Replied From Hospital --->
+                        <div class="hospital-data mt-4 pl-2 ">
+                            <div class="mb-4">
+                                <i class="fas fa-user mr-3"></i> Replied Message Info From <span>Morgan Hospital</span>
+                            </div>
+                            <div class="task-border">
+                                <table class="table border-0 ">
+                                    <thead>
+                                      <tr>
+                                        <th>Type</th>
+                                        <td>Case Investigation</td>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th>Patient Name</th>
+                                        <td>Mohamed Ahmed Mahmoud</td>
+                                      </tr>
+                                      <tr>
+                                        <td>ID Number</td>
+                                        <td>230124521289</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Mobile Number</td>
+                                        <td>01126257042</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Attachment</td>
+                                        <td class="company-btn">
+                                            <a href="img/Abdelrahim-Cv.pdf" download="company.pdf">
+                                                Download
+                                            </a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>Description</td>
+                                        <td>Admission date Is 1/8/2020 , And Exit Date Is 15/8/2020 , Estimated Cost Is 4370 EGP , The Full medical Report Attached </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+
+                        
+                        <!--- Addetional Actions From You --->
+                        <div class="hospital-data mt-4 pl-2 ">
+                            <div class="mb-4">
+                                <i class="fas fa-user mr-3"></i> Additional Actions</span>
+                            </div>
+                            <div class="task-border">
+                                <table class="table border-0 ">
+                                    <tbody>
+                                      <tr>
+                                        <td>Replied</td>
+                                        <td class="company-btn msg-btn"><span class="span">Send Message</span></td>
+                                      </tr>
+                                      <tr style="display: none;" class="msg">
+                                          <td>Write Message</td>
+                                          <td>
+                                              <form action="" class="form-group">
+                                                <textarea name="replied-msg" id="replied-msg" class="form-control" placeholder="Write Your Message" style="height: 100px;"></textarea>
+                                                <input type="submit" name="send" id="send" class="company-input mt-2" value="Send">    
+                                              </form>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                        <td>Your Satisfy</td>
+                                        <td class="company-btn evaluaion-btn"><span class="span">Add Evaluation</span></td>
+                                      </tr>
+                                      <tr class="evaluaion-msg" style="display: none;">
+                                          <td>
+                                              your Evaluation
+                                          </td>
+                                          <td>
+                                            <form action="" class="form-group">
+                                                <select name="satisfy" id="satisfy" class="form-control">
+                                                    <option value="Excellent">Excellent</option>
+                                                    <option value="very-good">Very Good</option>
+                                                    <option value="good">Good</option>
+                                                    <option value="bad">bad</option>
+                                                    <input type="submit" name="send-satisfy" id="sendsatisfy" class="company-input mt-2" value="Send">    
+                                                </select>
+                                            </form>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                        <td>Complain To Stacknet</td>
+                                        <td class="company-btn" data-toggle="modal" data-target="#complain"><span class="span">Send Complain</span></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!----------- Footer ------------>
+
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                        <div class="row border-top pt-3">
+                            <div class="col-lg-12 text-center">
+                                <p>&copy; 2020 copyright. made with <i class="fas fa-heart text-danger"></i> by <span class="text-success">Stacknet Team</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!------ Modals ------>
+        <!------- New Request Modal --------->
+        <div class="modal fade" id="new-request">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">Make New Request </div>
+                        <button type="button" class="close" data-dismiss="modal">&times</button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="form-group mt-3">
+                            <select name="new-request" id="new-request" class="form-control">
+                                <option value="Axa">Upload Pricw List</option>
+                                <option value="Globmid">Claim Form</option>
+                                <option value="Alico">Deployment</option>
+                            </select>
+                            <div class="text-center mt-3">
+                                <input type="submit" value="Make Request" class="btn btn-info">
+                            </div>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------- End Of Modal-->
+
+        <!------- Complain Modal --------->
+        <div class="modal fade" id="complain">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">Send Complain To Stacknet </div>
+                        <button type="button" class="close" data-dismiss="modal">&times</button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="form-group mt-3">
+                            <textarea name="complain" id="complain" cols="30" rows="10" placeholder="Complain Description" class="form-control"></textarea>
+                            <div class="text-center mt-3">
+                                <input type="submit" value="Done" class="btn btn-info">
+                            </div>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------- End Of Modal-->
+
+
+        
+        <script src="js/particles.js"></script>
+        <script src="js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+        <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+		<script src="../js/wow.min.js"></script>
+        <script>
+          new WOW().init();
+        </script>
+        <script src="js/jQuery3.3.1.min.js"></script>
+        <!---Slider Laibiray-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/sliderComponents.js"></script>
+        <script src="js/e.js"></script>
+	</body>
+    
+
+
+</html>
